@@ -1,0 +1,34 @@
+{
+  "user": [
+    {
+      "name": "jay",
+      "age": 31,
+      "id": 1
+    },
+    {
+      "name": "jay",
+      "age": "31",
+      "id": 2
+    },
+    {
+      "name": "kamal",
+      "age": "25",
+      "id": 3
+    },
+    {
+      "name": "siva ",
+      "age": "28",
+      "id": 4
+    },
+    {
+      "name": "mani",
+      "age": "29",
+      "id": 5
+    },
+    {
+      "name": "raaj",
+      "age": "30",
+      "id": 6
+    }
+  ]
+}

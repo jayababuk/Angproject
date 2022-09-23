@@ -1,0 +1,12 @@
+user = {
+    userName: "jay",
+    password: "1234",
+    email:"jay@gmail.com"
+}
+constructor(private userservice: userservice){}
+ngOninit(): void {
+
+}
+signup() {
+    const.observable: observable<any>=
+}
