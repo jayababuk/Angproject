@@ -1,0 +1,16 @@
+<p>Read book</p>
+<div>
+<!-- <label for="email">Email:</label>
+<Input type="email"  placeholder="Enter your email"   [(ngModel)]="user.email"/>
+<label for="bookId">BookId:</label>
+<Input type="text"  placeholder="Enter your bookId"   [(ngModel)]="user.bookId"/> -->
+
+<label for="email">Email:</label>
+<input type="text" placeholder="Enter your email:"  [(ngModel)]="user.email"/>
+<label for="bookId">BookId</label>
+<input type="text" placeholder="Please type your given bookId" [(ngModel)]="user.bookId">
+</div>
+
+<div>
+    <button  (click) = "readBook()" >ReadBook</button>
+</div>

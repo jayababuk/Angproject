@@ -1,0 +1,12 @@
+<h4>Buy book</h4>
+<div>
+<label for="username">Username:</label>
+<input type="text" placeholder="Enter your username" [(ngModel)]="user.username"/>
+<label for="email">Email:</label>
+<input type="text" placeholder="Enter your email:"  [(ngModel)]="user.email"/>
+<label for="bookId">BookId</label>
+<input type="text" placeholder="Please type your given bookId" [(ngModel)]="user.bookId">
+</div>
+<div>
+    <button (click) = "buyBook()">BuyBook</button>
+</div>

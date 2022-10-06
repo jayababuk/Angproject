@@ -1,0 +1,28 @@
+<p>create-book works!</p>
+<div>
+    <label>Title::</label>
+    <input type="text"  [(ngModel)]="book.title"  placeholder="Enter Title"/><br>
+    
+    <label>Publisher::</label>
+    <input type="text" placeholder="Enter publisher" [(ngModel)]="book.publisher"><br>
+    <label>content::</label>
+    <input type="text" placeholder="Enter content" [(ngModel)]="book.content"><br>
+    <label>catagory::</label>
+    <input type="text" placeholder="Enter catagory" [(ngModel)]="book.catagory"><br>
+    <label>author::</label>
+    <input type="text" placeholder="Enter author" [(ngModel)]="book.author"><br>
+    <label>Price::</label>
+    <input type="text" placeholder="Enter price" [(ngModel)]="book.price"><br>
+    <label>Active::</label>
+    <input type="text" placeholder="is it Active" [(ngModel)]="book.active"><br>
+    <label>isBlocked::</label>
+    <input type="text" placeholder="Enter isBlocked" [(ngModel)]="book.isBlocked"><br>
+    
+    
+</div>
+<div>
+<button (click) ='saveBook()'>saveBook</button>
+</div>
+
+
+

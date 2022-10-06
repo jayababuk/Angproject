@@ -1,0 +1,18 @@
+<p>check-book-by-payment-id works!</p>
+
+<p>Read book</p>
+<div>
+<!-- <label for="email">Email:</label>
+<Input type="email"  placeholder="Enter your email"   [(ngModel)]="user.email"/>
+<label for="bookId">BookId:</label>
+<Input type="text"  placeholder="Enter your bookId"   [(ngModel)]="user.bookId"/> -->
+
+<label for="email">Email:</label>
+<input type="text" placeholder="Enter your email:"  [(ngModel)]="user.email"/>
+<label for="paymentId">PaymentId</label>
+<input type="text" placeholder="Please type your given paymentId"  [(ngModel)]="user.paymentId">
+</div>
+
+<div>
+    <button  (click) = "checkByPaymentId()" >ReadBook</button>
+</div>
