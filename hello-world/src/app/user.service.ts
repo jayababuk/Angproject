@@ -10,7 +10,8 @@ export class UserService {
   }
 
   BASE_URL="http://3.95.162.87:8011/api/auth/";
-  signUp(user: { username: string; password: string; email: string; }) {  
+ // BASE_URL="http://localhost:8011/api/auth/";
+  signUp(user: { username: string; password: string; email: string; }) {
     return this.http.post(this.BASE_URL+"signup",user);
   }
  

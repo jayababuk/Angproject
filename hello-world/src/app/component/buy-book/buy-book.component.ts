@@ -16,6 +16,7 @@ export class BuyBookComponent implements OnInit {
   buyBook(){
     const observable= this.bookService.buyBook(this.user);
     observable.subscribe(response=>{
+      alert("Successfully Purchased book :");
       console.log(response);
     },
     error=>{

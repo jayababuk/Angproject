@@ -1,18 +1,23 @@
-<p>check-book-by-payment-id works!</p>
-
-<p>Read book</p>
+<table style="width:100%">
+  
+    <tr style="background-color: rgb(182, 211, 16);">
+     
+    
+      <td>
+      <h3 align="center">Get Order Books By Payment ID & Email</h3>      
+      </td>  
+    </tr> 
+  </table>
 <div>
-<!-- <label for="email">Email:</label>
-<Input type="email"  placeholder="Enter your email"   [(ngModel)]="user.email"/>
-<label for="bookId">BookId:</label>
-<Input type="text"  placeholder="Enter your bookId"   [(ngModel)]="user.bookId"/> -->
 
-<label for="email">Email:</label>
-<input type="text" placeholder="Enter your email:"  [(ngModel)]="user.email"/>
-<label for="paymentId">PaymentId</label>
-<input type="text" placeholder="Please type your given paymentId"  [(ngModel)]="user.paymentId">
+<div class="col-md-3" align="center">
+    <label class="form-label" style="font-family:verdana">Email</label>
+    <input type="text" class="form-control" [(ngModel)]="user.email" placeholder="Email *" />
+    <br>
+    <label class="form-label" style="font-family:verdana">PaymentId</label>
+    <input type="text" class="form-control" placeholder="PaymentId *"  [(ngModel)]="user.paymentId">
 </div>
 
-<div>
-    <button  (click) = "checkByPaymentId()" >ReadBook</button>
+<div align="center">
+    <button class="btn btn-primary mb-3"  (click) = "checkByPaymentId()" >Submit</button>
 </div>

@@ -1,12 +1,57 @@
-<h3>SignUp page</h3>
+<!doctype html>
+<html lang="en">
+ 
+  <body class="p-3 m-0 border-0 bd-example">
 
-<div>
-    <label >Username:</label>
-    <input type="text"  [(ngModel)]="user.username" placeholder="Enter Username"/><br>
-    <label >Password:</label>
-    <input type="password" [(ngModel)]="user.password" placeholder="Enter your pasword"/><br>
-    <label>Email:</label>
-    <input type="text" [(ngModel)]="user.email" placeholder="Enter your Email"/><br>
-    <button  type="button" class="btn btn-primary" (click)="signup()">Submit</button>
-    <button class='btn btn-primary' type="button" (click)="signup()">Signup</button>
+    <table style="width:100%">
+  
+        <tr style="background-color: rgb(182, 211, 16);">
+              
+          <td>
+          <h3 align="center">Sing Up</h3>      
+          </td>  
+        </tr> 
+      </table>  
+      <h3 align="center">CREATE ACCOUNT</h3>
+    
+    <div  align="center"  class="col-md-12 needs-validation was-validated"  novalidate="">
+      
+      
+      <div class="col-md-3">
+        <label for="validationCustom05" class="form-label">Username</label>
+        <input type="text" class="form-control" placeholder="Password *" [(ngModel)]="user.username" id="validationCustom05" required="">
+       </div>
+      
+      <div class="col-md-3">
+        <label for="validationCustom05" class="form-label">Password</label>
+        <input type="password" class="form-control" placeholder="Password *" [(ngModel)]="user.password" id="validationCustom05" required="">
+      </div>
+
+       <div class="col-md-3">
+        <label for="validationCustom05" class="form-label">Email</label>
+        <input type="text" class="form-control" placeholder="Email *" [(ngModel)]="user.email" id="validationCustom05" required="">
+        </div>
+
+      <div class="col-md-3">
+    <label for="validationCustom04" class="form-label">Roles</label>
+    <select class="form-select" id="validationCustom04" id="role" [(ngModel)]="roles" required>
+      <option selected disabled value="">Select</option>
+          <option >Reader</option>
+          <option >Author</option>
+        </select>
+      </div>
+     <!-- <p>Selected option: {{ roles }}</p>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  -->
+      <div  class="col-15" >
+        <button type="button" class="btn btn-primary" (click)="signup()">Submit</button>
+    </div>
 </div>
+</body>  
+</html>
+    
+  
+
+

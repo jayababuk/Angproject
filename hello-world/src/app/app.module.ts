@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +16,10 @@ import { AllPurchasedBookByEmailComponent } from './component/all-purchased-book
 import { BuyBookComponent } from './component/buy-book/buy-book.component';
 import { ReadBookComponent } from './component/read-book/read-book.component';
 import { CheckBookByPaymentIdComponent } from './component/check-book-by-payment-id/check-book-by-payment-id.component';
+import { UpdateBookComponent } from './component/update-book/update-book.component';
+import { BookListComponent } from './component/book-list/book-list.component';
+import { MainComponent } from './component/main/main.component';
+
 
 const routes:Route []= [
   {path:'search', component:SearchBookComponent},
@@ -25,7 +29,10 @@ const routes:Route []= [
   {path:'allPurchasedBook', component:AllPurchasedBookByEmailComponent},
   {path:'buyBook', component:BuyBookComponent},
   {path:'readBook', component:ReadBookComponent},
-  {path:'checkPayment', component:CheckBookByPaymentIdComponent}
+  {path:'checkPayment', component:CheckBookByPaymentIdComponent},
+  {path:'booklist', component:BookListComponent},
+  {path:'main', component:MainComponent},
+  {path:'update', component:UpdateBookComponent}
 ];
 @NgModule({
   declarations: [
@@ -39,7 +46,10 @@ const routes:Route []= [
     AllPurchasedBookByEmailComponent,
     BuyBookComponent,
     ReadBookComponent,
-    CheckBookByPaymentIdComponent
+    CheckBookByPaymentIdComponent,
+    UpdateBookComponent,
+    BookListComponent,
+    MainComponent
     
   ],
   imports: [

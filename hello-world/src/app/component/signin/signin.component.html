@@ -1,8 +1,38 @@
-<h3>Login page</h3>
-<div>
-<label for="username">Username:</label>
-<input type="text" placeholder="Enter your username" [(ngModel)]="user.username"/><br>
-<label for="password">Password:</label>
-<input type="password" placeholder="Enter your password" [(ngModel)]="user.password"/><br>
-<button (click) = "signin()">submit</button>
+<!doctype html>
+<html lang="en">
+ 
+  <body class="p-3 m-0 border-0 bd-example">
+
+    <table style="width:100%">
+  
+        <tr style="background-color: rgb(182, 211, 16);">
+         
+        
+          <td>
+          <h3 align="center">Sign In</h3>      
+          </td>  
+        </tr> 
+      </table>  
+    
+    <div  align="center"  class="col-md-12 needs-validation was-validated"  novalidate="">
+      
+      
+      <div class="col-md-3">
+        <label for="validationCustom05" class="form-label">Username</label>
+        <input type="text" class="form-control" placeholder="Password *" [(ngModel)]="user.username" id="validationCustom05" required="">
+       </div>
+      
+      <div class="col-md-3">
+        <label for="validationCustom05" class="form-label">Password</label>
+        <input type="password" class="form-control" placeholder="Password *" [(ngModel)]="user.password" id="validationCustom05" required="">
+       </div>
+
+      <div  class="col-12" >
+        <button  class="btn btn-primary mb-4" (click)='signin()'>LOGIN</button>
+    </div>
 </div>
+    
+
+    
+  </body>
+</html>

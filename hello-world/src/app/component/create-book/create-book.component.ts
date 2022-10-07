@@ -22,7 +22,7 @@ export class CreateBookComponent implements OnInit {
 
   
   saveBook(){
-    
+    alert("Successfully created book with title ::"+this.book.title);
     const observable= this.bookService.saveBook(this.book);
     observable.subscribe(response=>{
       console.log(response);

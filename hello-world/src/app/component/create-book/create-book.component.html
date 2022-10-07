@@ -1,28 +1,50 @@
-<p>create-book works!</p>
-<div>
-    <label>Title::</label>
-    <input type="text"  [(ngModel)]="book.title"  placeholder="Enter Title"/><br>
-    
-    <label>Publisher::</label>
-    <input type="text" placeholder="Enter publisher" [(ngModel)]="book.publisher"><br>
-    <label>content::</label>
-    <input type="text" placeholder="Enter content" [(ngModel)]="book.content"><br>
-    <label>catagory::</label>
-    <input type="text" placeholder="Enter catagory" [(ngModel)]="book.catagory"><br>
-    <label>author::</label>
-    <input type="text" placeholder="Enter author" [(ngModel)]="book.author"><br>
-    <label>Price::</label>
-    <input type="text" placeholder="Enter price" [(ngModel)]="book.price"><br>
-    <label>Active::</label>
-    <input type="text" placeholder="is it Active" [(ngModel)]="book.active"><br>
-    <label>isBlocked::</label>
-    <input type="text" placeholder="Enter isBlocked" [(ngModel)]="book.isBlocked"><br>
-    
-    
+<div></div>
+<table style="width:100%">
+  
+    <tr style="background-color: rgb(182, 211, 16);">
+          
+      <td>
+      <h3 align="center">Create Book</h3>      
+      </td>  
+    </tr> 
+</table> 
+<!-- <h3 class="text-dark" style="background-color:rgb(182, 211, 16); text-align:center;">Create Book</h3> -->
+<div align="center">
+    <div class="col-md-3">
+        <label class="form-label" style="font-family:verdana">Title</label>
+        <input type="text" class="form-control" [(ngModel)]="book.title" placeholder="Title *" /><br>
+    </div>
+    <div class="col-md-3">
+        <label class="form-label" style="font-family:verdana">Publisher</label>
+        <input type="text" class="form-control" placeholder=" Publisher *" [(ngModel)]="book.publisher"><br>
+    </div>
+    <div class="col-md-3">
+        <label class="form-label" style="font-family:verdana">Content</label>
+        <input type="text" class="form-control" placeholder=" Content *" [(ngModel)]="book.content"><br>
+    </div>
+    <div class="col-md-3">
+        <label class="form-label" style="font-family:verdana">Catagory </label>
+        <input type="text" class="form-control" placeholder=" Catagory *" [(ngModel)]="book.catagory">
+    </div>
+    <div class="col-md-3">
+        <label class="form-label" style="font-family:verdana">Author</label>
+        <input type="text" class="form-control" placeholder="Author *" [(ngModel)]="book.author">
+    </div>
+
+    <div class="col-md-3">
+        <label class="form-label" style="font-family:verdana">Price</label>
+        <input type="text" class="form-control" placeholder="Price *" [(ngModel)]="book.price">
+    </div>
+    <div class="col-md-3">
+        <label style="font-family:verdana">Active</label>
+        <input type="text" class="form-control" placeholder="Active *" [(ngModel)]="book.active" disabled><br>
+    </div>
+    <div class="col-md-3">
+        <label class="form-label" style="font-family:verdana">isBlocked::</label>
+        <input type="text" class="form-control" placeholder="Enter isBlocked" [(ngModel)]="book.isBlocked" disabled><br>
+    </div>
+
 </div>
-<div>
-<button (click) ='saveBook()'>saveBook</button>
+<div class="col-14" align="center">
+    <button type="button" class="btn btn-primary mb-3" (click)='saveBook()'>saveBook</button>
 </div>
-
-
-

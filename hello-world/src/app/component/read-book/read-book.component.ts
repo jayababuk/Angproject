@@ -13,7 +13,7 @@ export class ReadBookComponent implements OnInit {
     bookId:""
   }
   readBook(){
-    alert("Book id ::"+this.user.bookId+"For the User ::  "+this.user.email);
+    //alert("this user bookId::"+this.user.bookId+"BookId::::  "+this.user.email);
     const observable= this.bookService.readBook(this.user);
     observable.subscribe(response=>{
       console.log(response);

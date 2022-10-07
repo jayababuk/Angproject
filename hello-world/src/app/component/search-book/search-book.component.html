@@ -1,12 +1,29 @@
-<div>
-    <label>catagory::</label>
-    <input type="text" placeholder="Enter catagory" [(ngModel)]="book.catagory"><br><br>
-    <label>author::</label>
-    <input type="text" placeholder="Enter author" [(ngModel)]="book.author"><br><br>
-    <label>Price::</label>
-    <input type="text" placeholder="Enter price" [(ngModel)]="book.price"><br><br>
+<!-- <h3 class="text-dark" style="background-color:powderblue; text-align:center;"> Search your Favorite Book</h3>-->
+<table style="width:100%">
+  
+    <tr style="background-color: rgb(182, 211, 16);">
+          
+      <td>
+      <h3 align="center">Search Book</h3>     
+      </td>  
+    </tr> 
+</table> 
+<div align="center">
+    <div class="col-md-3">
+    <label class="form-label">Catagory </label>
+    <input type="text" class="form-control me-2" placeholder="Enter catagory" [(ngModel)]="book.catagory">
 </div>
+    <div class="col-md-3">
+    <label class="form-label">Author</label>
+    <input type="text" class="form-control me-2" placeholder="Enter author" [(ngModel)]="book.author">
+   </div>
 
-<div>
-    <button  type="button" class="btn btn-primary" (click)="sarchBook()">Search</button>
+    <div class="col-md-3">
+   <label class="form-label">Price</label>
+    <input type="text"  class="form-control me-2" placeholder="Enter price" [(ngModel)]="book.price">
+</div>
+</div><br>
+
+<div class="col-14" align="center">
+    <button  type="button" class="btn btn-outline-success" (click)="sarchBook()">Search</button>
 </div>
